@@ -1,0 +1,262 @@
+//
+// Landing elements
+//
+
+// Variables
+$landing-light-color: #ffffff;
+$landing-dark-color: #0a0d14;
+$landing-header-height: 98px;
+$landing-navigation-height: 3.75rem;
+$landing-header-height-tablet-and-mobile: 70px;
+$landing-header-sticky-height: 70px;
+$landing-header-sticky-height-tablet-and-mobile: 70px;
+
+// Utility classes
+.landing-dark-bg {
+  background-color: $landing-dark-color;
+}
+
+.landing-dark-color {
+  color: $landing-dark-color;
+}
+
+.landing-light-bg {
+  background-color: $landing-light-color;
+}
+
+.landing-light-color {
+  color: $landing-light-color;
+}
+
+.landing-dark-border {
+  border: 1px dashed #2c3f5b;
+}
+
+.landing-dark-separator {
+  border-top: 1px dashed #2c3f5b;
+}
+
+.landing-curve {
+  position: relative;
+
+  svg {
+    position: relative;
+    top: 0;
+    display: block;
+  }
+}
+
+.top-bar {
+  height: 6.75rem;
+  .eu-logo {
+    height: 56px;
+  }
+  .top-logo {
+    height: 36px;
+  }
+  @include media-breakpoint-down(md) {
+    height: 5.5rem;
+    margin: 0px 16px;
+    .eu-logo {
+      height: 36px;
+    }
+    .top-logo {
+      height: 20px;
+    }
+  }
+}
+
+.student-nav {
+  .nav-link {
+    padding: 1rem !important;
+  }
+  .tab-img {
+    width: 4.375rem;
+    height: 4.375rem;
+    border-radius: 4.375rem;
+  }
+  .active {
+    border-radius: 4.375rem;
+    border: 2px solid #e74238;
+  }
+}
+
+.gray-filter-images {
+  img {
+    filter: grayscale(1);
+  }
+}
+
+// Landing Navigation Header
+.landing-navigation-header {
+  display: flex;
+  align-items: center;
+  height: $landing-navigation-height;
+  .nav-line-tabs {
+    border: none !important;
+  }
+  .nav-link {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    color: #cdd0d5;
+    // Active & Hover States
+    &.active {
+      color: white !important;
+    }
+    &.active,
+    &:hover:not(.disabled) {
+      background-color: transparent;
+      border: 0 !important;
+      border-top: 2px solid #e74238 !important;
+      border-radius: 0;
+    }
+  }
+}
+// Landing header
+.landing-header {
+  display: flex;
+  align-items: center;
+  height: $landing-header-height;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+
+  @include media-breakpoint-down(md) {
+    max-width: 100%;
+    padding: 0;
+    .container {
+      padding: 0 0.25rem;
+    }
+  }
+  // Logos
+  .logo-default {
+    display: block;
+  }
+
+  .logo-sticky {
+    display: none;
+  }
+
+  // Menu
+  .menu {
+    // Menu link
+    .menu-link {
+      &.active {
+        color: $white;
+      }
+    }
+
+    // Header menu sticky mode
+    [data-kt-sticky-landing-header="on"] & {
+      // Menu link
+      .menu-link {
+        &.active {
+          color: $primary;
+          background-color: rgba(#eff2f5, 0.4);
+        }
+      }
+    }
+  }
+
+  // Sticky header modes
+  [data-kt-sticky-landing-header="on"] & {
+    padding: 0 2rem;
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    background-color: $white;
+    box-shadow: 0px 10px 30px 0px rgba(82, 63, 105, 0.05);
+    height: $landing-header-sticky-height;
+
+    // Logos
+    .logo-sticky {
+      display: block;
+    }
+
+    .logo-default {
+      display: none;
+    }
+  }
+}
+
+// Fix body padding top when Landing sticky header is on
+body[data-kt-sticky-landing-header="on"] {
+  padding-top: $landing-header-height;
+}
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+  // Landing header
+  .landing-header {
+    height: $landing-header-height-tablet-and-mobile;
+
+    // Menu wrapper
+    .landing-menu-wrapper {
+      position: relative;
+      overflow: auto;
+    }
+
+    // Sticky header modes
+    [data-kt-sticky-landing-header="on"] & {
+      height: $landing-header-sticky-height-tablet-and-mobile;
+    }
+
+    // Menu
+    .menu {
+      // Menu link
+      .menu-link {
+        &.active {
+          color: $primary;
+          background-color: rgba(#eff2f5, 0.4);
+        }
+      }
+    }
+  }
+
+  // Fix body padding top when Landing sticky header is on
+  body[data-kt-sticky-landing-header="on"] {
+    padding-top: $landing-header-height-tablet-and-mobile;
+  }
+
+  .mobile-scroll-wrapper {
+    max-width: 98%;
+    overflow-y: auto;
+    margin: auto;
+  }
+
+  .mobile-banner {
+    display: block;
+    height: 450px;
+    max-width: 99%;
+    margin: auto;
+    .translate-middle-x {
+      max-width: 90%;
+    }
+    .certificate {
+      bottom: 4% !important;
+      left: 28% !important;
+    }
+    .video {
+      right: 5% !important;
+      top: 35% !important;
+    }
+    .application {
+      bottom: 75% !important;
+      left: 5% !important;
+    }
+  }
+}
+
+.recommended-slider {
+  .tns-outer {
+    margin: 0 !important;
+  }
+}
+.cyber-security-slider {
+  .tns-outer {
+    margin: 0 !important;
+  }
+}
