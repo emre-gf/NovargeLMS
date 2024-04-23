@@ -130,3 +130,13 @@
     }
   }
 }
+.faq-acordion {
+  .accordion-item {
+    border-top: 1px solid #f1f1f4 !important;
+    border-radius: 0.5rem;
+  }
+  .accordion-button {
+    height: 70px;
+    border-radius: 0.5rem;
+  }
+}
