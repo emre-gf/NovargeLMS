@@ -54,7 +54,7 @@
 			<!--begin::Wrapper-->
 			<div class="bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom landing-dark-bg">
 				<!--begin::Header-->
-				<div class="landing-navigation-header">
+				<div class="landing-navigation-header d-none d-md-inline">
 					<!--begin::Container-->
 					<div class="container mx-2 md-mx-4">
 						<!--begin::Wrapper-->
@@ -137,35 +137,66 @@
 										<!--begin::Menu item-->
 										<div class="menu-item">
 											<!--begin::Menu link-->
-											<a class="menu-link nav-link active py-3 px-4 px-xxl-6" href="#kt_body"
-												data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Home</a>
+											<a class="menu-link nav-link active py-3 px-4 px-xxl-6"
+												href="homepage-1.html" data-kt-scroll-toggle="true"
+												data-kt-drawer-dismiss="true">Anasayfa</a>
 											<!--end::Menu link-->
 										</div>
 										<!--end::Menu item-->
 										<!--begin::Menu item-->
 										<div class="menu-item">
 											<!--begin::Menu link-->
-											<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#how-it-works"
-												data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">How it
-												Works</a>
+											<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="education-list.html"
+												data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Tüm
+												Eğitimler</a>
 											<!--end::Menu link-->
 										</div>
 										<!--end::Menu item-->
 										<!--begin::Menu item-->
 										<div class="menu-item">
 											<!--begin::Menu link-->
-											<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#achievements"
-												data-kt-scroll-toggle="true"
-												data-kt-drawer-dismiss="true">Achievements</a>
+											<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="blog-1.html"
+												data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Blog</a>
 											<!--end::Menu link-->
 										</div>
 										<!--end::Menu item-->
 										<!--begin::Menu item-->
 										<div class="menu-item">
 											<!--begin::Menu link-->
-											<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#team"
-												data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Team</a>
+											<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="about-us.html"
+												data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Biz Kimiz</a>
 											<!--end::Menu link-->
+										</div>
+										<!--end::Menu item-->
+										<!--begin::Menu item-->
+										<div class="menu-item">
+											<!--begin::Menu link-->
+											<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="faq.html"
+												data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">SSS</a>
+											<!--end::Menu link-->
+										</div>
+										<!--end::Menu item-->
+										<!--begin::Menu item-->
+										<div class="menu-item">
+											<!--begin::Menu link-->
+											<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="contact-us.html"
+												data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">İletişim</a>
+											<!--end::Menu link-->
+										</div>
+										<!--end::Menu item-->
+										<!--begin::Menu item-->
+										<div class="menu-item mt-auto mb-10">
+											<!--begin::Language Dropdown-->
+											<label class="form-check-label justify-content-start mb-3" for="language">
+												Dil seçimi:
+											</label>
+											<select class="form-select min-w-100px w-100" name="language">
+												<option value="1" selected="selected">Türkçe</option>
+												<option value="2">İngilizce</option>
+												<option value="3">Almanca</option>
+												<option value="4">Fransızca</option>
+											</select>
+											<!--end::Language Dropdown-->
 										</div>
 										<!--end::Menu item-->
 									</div>
@@ -191,18 +222,34 @@
 							<!--end::Menu wrapper-->
 							<!--begin::Toolbar-->
 							<div class="flex-equal text-end ms-1 d-flex justify-content-end">
-								<i class="bi bi-bell-fill fs-4 text-gray-700 align-self-center d-none d-md-inline-block"></i>
+								<i
+									class="bi bi-bell-fill fs-4 text-gray-700 align-self-center d-none d-md-inline-block"></i>
 								<i class="bi bi-heart-fill fs-4 text-gray-700 mx-4 lg-mx-8 align-self-center"></i>
 								<a href="sign-in.html"
 									class="btn bg-gray-200 bg-hover-gray-400 fw-bolder me-1 me-lg-4">Giriş Yap</a>
-								<a href="sign-up.html"
-									class="btn btn-danger d-none d-md-inline fw-bolder">
+								<a href="sign-up.html" class="btn btn-danger d-none d-md-inline fw-bolder">
 									Ücretsiz Kaydol
 								</a>
 							</div>
 							<!--end::Toolbar-->
 						</div>
 						<!--end::Wrapper-->
+						<!--begin::Menu wrapper-->
+						<div class="d-flex d-md-none align-items-center mt-1 px-2">
+							<!--begin::Search wrapper-->
+							<div class="position-relative w-100">
+								<i
+									class="ki-duotone ki-magnifier fs-3 text-gray-600 position-absolute top-50 translate-middle ms-6">
+									<span class="path1"></span>
+									<span class="path2"></span>
+								</i>
+								<input type="text"
+									class="form-control form-control-solid bg-white border-gray-400 ps-10 w-100"
+									name="search" value="" placeholder="Eğitim, kurs, kategori ara...." />
+							</div>
+							<!--end::Search wrapper-->
+						</div>
+						<!--end::Menu wrapper-->
 					</div>
 					<!--end::Container-->
 				</div>
@@ -236,7 +283,7 @@
 							class="position-absolute end-0 bottom-0 w-100" />
 						<!--begin::Story-->
 						<div
-							class="border border-gray-300 border-dashed rounded border-2 min-w-125px py-2 px-8 position-absolute bottom-25 end-25 bg-white z-index-3">
+							class="border border-gray-300 border-dashed rounded border-2 min-w-125px py-2 px-8 d-none d-lg-inline position-absolute bottom-25 end-25 bg-white z-index-3">
 							<!--begin::Number-->
 							<div class="d-flex align-items-center justify-content-center">
 								<i class="ki-duotone ki-profile-user text-danger fs-2x me-4">
@@ -255,7 +302,7 @@
 						</div>
 						<!--end::Story-->
 						<!--begin::Story-->
-						<div class="border border-gray-300 border-dashed rounded border-2 min-w-125px py-2 px-8 position-absolute bg-white z-index-3 certificate"
+						<div class="border border-gray-300 border-dashed rounded border-2 min-w-125px py-2 px-8 d-none d-lg-inline position-absolute bg-white z-index-3 certificate"
 							style="bottom: 10%;left:-10%">
 							<!--begin::Number-->
 							<div class="d-flex align-items-center justify-content-center">
@@ -275,7 +322,7 @@
 						<!--end::Story-->
 						<!--begin::Story-->
 						<div
-							class="border border-gray-300 border-dashed rounded border-2 min-w-125px py-2 px-8 position-absolute bottom-50 start-0 bg-white z-index-3 application">
+							class="border border-gray-300 border-dashed rounded border-2 min-w-125px py-2 px-8 d-none d-lg-inline position-absolute bottom-50 start-0 bg-white z-index-3 application">
 							<!--begin::Number-->
 							<div class="d-flex align-items-center justify-content-center">
 								<i class="ki-duotone ki-note-2 text-danger fs-2x me-4">
@@ -294,7 +341,7 @@
 						</div>
 						<!--end::Story-->
 						<!--begin::Story-->
-						<div class="border border-gray-300 border-dashed rounded border-2 min-w-125px py-2 px-8 position-absolute bg-white top-25 z-index-3 video"
+						<div class="border border-gray-300 border-dashed rounded border-2 min-w-125px py-2 px-8 d-none d-lg-inline position-absolute bg-white top-25 z-index-3 video"
 							style="right:5%">
 							<!--begin::Number-->
 							<div class="d-flex align-items-center justify-content-center">
@@ -879,10 +926,10 @@
 				<!--begin::Row-->
 				<div class="row w-100 gy-10 mb-md-20 mx-auto">
 					<!--begin::Col-->
-					<div class="col-md-3 px-5">
+					<div class="col-6 col-md-3 px-5">
 						<!--begin::Story-->
 						<div
-							class="border border-gray-300 border-dashed rounded border-2 min-w-125px py-3 px-4 me-6 mb-3">
+							class="border border-gray-300 border-dashed rounded border-2 min-w-125px py-3 px-2 px-md-4 me-md-6 mb-3">
 							<!--begin::Number-->
 							<div class="d-flex align-items-center justify-content-center">
 								<i class="ki-duotone ki-profile-user text-danger fs-2x me-4">
@@ -903,10 +950,10 @@
 					</div>
 					<!--end::Col-->
 					<!--begin::Col-->
-					<div class="col-md-3 px-5">
+					<div class="col-6 col-md-3 px-5">
 						<!--begin::Story-->
 						<div
-							class="border border-gray-300 border-dashed rounded border-2 min-w-125px py-3 px-4 me-6 mb-3">
+							class="border border-gray-300 border-dashed rounded border-2 min-w-125px py-3 px-2 px-md-4 me-md-6 mb-3">
 							<!--begin::Number-->
 							<div class="d-flex align-items-center justify-content-center">
 								<i class="ki-duotone ki-note-2 text-danger fs-2x me-4">
@@ -927,10 +974,10 @@
 					</div>
 					<!--end::Col-->
 					<!--begin::Col-->
-					<div class="col-md-3 px-5">
+					<div class="col-6 col-md-3 px-5">
 						<!--begin::Story-->
 						<div
-							class="border border-gray-300 border-dashed rounded border-2 min-w-125px py-3 px-4 me-6 mb-3">
+							class="border border-gray-300 border-dashed rounded border-2 min-w-125px py-3 px-2 px-md-4 me-md-6 mb-3">
 							<!--begin::Number-->
 							<div class="d-flex align-items-center justify-content-center">
 								<i class="ki-duotone ki-to-right text-danger fs-2x me-4">
@@ -947,9 +994,10 @@
 					</div>
 					<!--end::Col-->
 					<!--begin::Col-->
-					<div class="col-md-3 px-5">
+					<div class="col-6 col-md-3 px-5">
 						<!--begin::Story-->
-						<div class="border border-gray-300 border-dashed rounded border-2 min-w-125px py-3 px-4 mb-3">
+						<div
+							class="border border-gray-300 border-dashed rounded border-2 min-w-125px py-3 px-2 px-md-4 mb-3">
 							<!--begin::Number-->
 							<div class="d-flex align-items-center justify-content-center">
 								<i class="ki-duotone ki-award text-danger fs-2x me-4">
@@ -986,8 +1034,7 @@
 							Eğitimlerimize ait duyuru, kampanya ve haberlerimizi takip edebilirsiniz.</small>
 					</div>
 					<div class="align-self-end">
-						<a href="blog-1.html"
-							class="btn bg-gray-200 bg-hover-gray-400 ">
+						<a href="blog-1.html" class="btn bg-gray-200 bg-hover-gray-400 ">
 							<b>Bloga gözat</b>
 						</a>
 					</div>

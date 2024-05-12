@@ -7,9 +7,9 @@ $landing-light-color: #ffffff;
 $landing-dark-color: #0a0d14;
 $landing-header-height: 98px;
 $landing-navigation-height: 3.75rem;
-$landing-header-height-tablet-and-mobile: 70px;
+$landing-header-height-tablet-and-mobile: 96px;
 $landing-header-sticky-height: 70px;
-$landing-header-sticky-height-tablet-and-mobile: 70px;
+$landing-header-sticky-height-tablet-and-mobile: 96px;
 
 // Utility classes
 .landing-dark-bg {
@@ -124,7 +124,7 @@ $landing-header-sticky-height-tablet-and-mobile: 70px;
 
   @include media-breakpoint-down(md) {
     max-width: 100%;
-    padding: 0;
+    padding: 0 0.25rem;
     .container {
       padding: 0 0.25rem;
     }
@@ -170,7 +170,9 @@ $landing-header-sticky-height-tablet-and-mobile: 70px;
     background-color: $white;
     box-shadow: 0px 10px 30px 0px rgba(82, 63, 105, 0.05);
     height: $landing-header-sticky-height;
-
+    @include media-breakpoint-down(md) {
+      padding: 0 0.75rem;
+    }
     // Logos
     .logo-sticky {
       display: block;
@@ -192,6 +194,10 @@ body[data-kt-sticky-landing-header="on"] {
   // Landing header
   .landing-header {
     height: $landing-header-height-tablet-and-mobile;
+
+    .form-control {
+      font-size: 12px !important;
+    }
 
     // Menu wrapper
     .landing-menu-wrapper {
@@ -258,5 +264,10 @@ body[data-kt-sticky-landing-header="on"] {
 .cyber-security-slider {
   .tns-outer {
     margin: 0 !important;
+  }
+}
+
+.mobile-search {
+  @include media-breakpoint-down(lg) {
   }
 }

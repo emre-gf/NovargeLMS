@@ -48271,7 +48271,7 @@ a:hover {
 @media (max-width: 767.98px) {
   .landing-header {
     max-width: 100%;
-    padding: 0;
+    padding: 0 0.25rem;
   }
   .landing-header .container {
     padding: 0 0.25rem;
@@ -48301,6 +48301,11 @@ a:hover {
   box-shadow: 0px 10px 30px 0px rgba(82, 63, 105, 0.05);
   height: 70px;
 }
+@media (max-width: 767.98px) {
+  [data-kt-sticky-landing-header=on] .landing-header {
+    padding: 0 0.75rem;
+  }
+}
 [data-kt-sticky-landing-header=on] .landing-header .logo-sticky {
   display: block;
 }
@@ -48314,21 +48319,24 @@ body[data-kt-sticky-landing-header=on] {
 
 @media (max-width: 991.98px) {
   .landing-header {
-    height: 70px;
+    height: 96px;
+  }
+  .landing-header .form-control {
+    font-size: 12px !important;
   }
   .landing-header .landing-menu-wrapper {
     position: relative;
     overflow: auto;
   }
   [data-kt-sticky-landing-header=on] .landing-header {
-    height: 70px;
+    height: 96px;
   }
   .landing-header .menu .menu-link.active {
     color: #E74238;
     background-color: rgba(239, 242, 245, 0.4);
   }
   body[data-kt-sticky-landing-header=on] {
-    padding-top: 70px;
+    padding-top: 96px;
   }
   .mobile-scroll-wrapper {
     max-width: 98%;
